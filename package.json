@@ -1,0 +1,25 @@
+{
+  "name": "newman-runner",
+  "version": "1.0.0",
+  "description": "",
+  "main": "newmanExecute.js",
+  "bin": {
+    "newman-runner": "newmanExecute.js"
+  },
+  "scripts": {
+    "build": "pkg . --targets node10-linux-x64 --ouput newman-runner"
+  },
+  "dependencies": {
+    "newman": "^5.2.2"
+  },
+  "author": "",
+  "license": "ISC",
+  "pkg": {
+    "scripts": [
+      "newmanExecute.js"
+    ],
+    "assets": [
+      "node_modules/**"
+    ]
+  }
+}
